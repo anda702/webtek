@@ -4,6 +4,7 @@ html,
 body {
     padding: 0px;
     margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -71,4 +72,18 @@ body {
 
 .font-color-8 {
     color: #a5151c;
+}
+
+
+/* Header */
+
+main {
+    width: 100%;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
 }
