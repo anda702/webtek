@@ -10,32 +10,28 @@
 	</head>
 	<body>
 		<!-- Icon Bar (Sidenav - hidden on small screens) -->
-		<nav class="sidenav center small hide-small roundpicnav">
-                  <!-- Avatar image in top left corner -->
-		  <img src="placeholder.jpg" alt="Text about image">
+		<nav class="sidenav center small hide-small padding-top">
+
                   <!-- Image links left side -->
-		  <a class="padding-large hover-black" href="#">
-			<i class="fa fa-home fa-4x xxlarge"></i>
+		  <a class="padding-large hover-black " href="#">
+			<i class="fa fa-user fa-4x"></i>
 			<p>MAIN PAGE</p>
 		  </a>
 		  <a class="padding-large hover-black" href="#">
-			<i class="fa fa-user fa-4x xxlarge"></i>
-                        <p>SOMETHING</p>
+			<i class="fa fa-eye fa-4x"></i>
+                        <p>LINK 2</p>
 		  </a>
 		  <a class="padding-large hover-black" href="#">
-			<i class="fa fa-camera-retro fa-4x xxlarge"></i>
-			<p>SOMETHING</p>
+			<i class="fa fa-image fa-4x"></i>
+			<p>LINK 3</p>
 		  </a>
 		   <a class="padding-large hover-black" href="#">
-			<i class="fa fa-users fa-4x xxlarge"></i>
-			<p>SOMETHING</p>
+			<i class="fa fa-map fa-4x"></i>
+			<p>LINK 4</p>
 		  </a>
-                  <a class="padding-large hover-black" href="#">
-			<i class="fa fa-calendar fa-4x xxlarge"></i>
-			<p>SOMETHING</p>
-		  </a>
+            
 		  <a class="padding-large hover-black" href="#">
-			<i class="fa fa-envelope fa-4x xxlarge"></i>
+			<i class="fa fa-envelope-o fa-4x"></i>
 			<p>CONTACT</p>
 		  </a>
 		</nav>
@@ -68,7 +64,7 @@
 		</div>
 		
                 <section class="content clear">
-                    <h2 class="padding-16">About</h2>
+                    <h2 class="padding-16">Headline</h2>
                     <article class="clear">                        
                         <figure class="slimimage padding-16">
                             <img src="placeholder.jpg"  alt="Text about image">
@@ -115,12 +111,12 @@
                 </section>
 		
                 <!-- Link Buttons-->
-                <section>
+                <section class="padding-32">
                     <h3 class="content padding-12">Link to other sites: </h3>
                     <div class="content center padding-12">
-                        <a href="#"  class="button" target="blank" role="button">link</a>
-                        <a href="#" class="button" target="blank" role="button">link</a>
-                        <a href="#" class="button" target="blank" role="button">link</a>
+                        <a href="#"  class="link" >link</a>
+                        <a href="#" class="link" >link</a>
+                        <a href="#" class="link" >link</a>
                     </div>
                 </section>
                 <!-- End of Link Buttons-->
@@ -128,20 +124,21 @@
                 <!-- Footer --> 
 		  <footer class="content padding-64 text-grey xlarge">
 			<i class="fa fa-facebook-official hover-text-indigo"></i>
-			<a href="#" target="blank"><i class="fa fa-instagram hover-text-purple"></i></a>
+                        <i class="fa fa-twitter hover-text-light-blue"></i>
+			<i class="fa fa-instagram hover-text-purple"></i>
 			<a><i class="fa fa-snapchat hover-text-yellow"></i></a>
 			<i class="fa fa-pinterest-p hover-text-red"></i>
 			<p class="footertext">Made by: name<br><br>
                     <script language="javascript"> 
-                        months = ['Januar', 'Februar', 'Mars', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Desember']; 
+                        months = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'Juli', 'August', 'September', 'October', 'November', 'Desember']; 
                         var d=new Date();
-                        var weekday=new Array(7); weekday=['Søndag','Mandag','Tirsdag','Onsdag','Torsdag','Fredag','Lørdag'];
+                        var weekday=new Array(7); weekday=['Sunday','Monday','Tuesday','Wednesday','Thursday','Fridag','Saturday'];
                         var d = new Date(); 
                         (d.getFullYear());
                         var theDate = new Date(document.lastModified); 
                         theDate.setTime((theDate.getTime()+(60*60)) ) 
                         with (theDate) { 
-                        document.write("<i>Oppdatert: "+weekday[getDay()]+' '+getDate()+' '+months[getMonth()]+' \n\
+                        document.write("<i>Updated: "+weekday[getDay()]+' '+getDate()+' '+months[getMonth()]+' \n\
                         '+d.getFullYear()+"</i>");
                         } 
                     </script>                    
