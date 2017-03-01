@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(150, 71, 44);
+    width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(200, 0, 100)
+}
+
+nav {
+    text-align: center;
+    background-color: red
+}
+
+img {
+    width: 300px;
+}
+
+article {
+    border-style: dotted;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: rgb(100, 100, 100)
+}
+
+.byline {
+    text-align: center;
+}
+
+section {
+    float: right;
+}
+
+aside {
+    float: left;
+    border-style: groove;
+    background-color: rgb(200, 50, 50)
+}
+
+footer {
+    clear: both;
+}
+
+section {
+    background-color: red;
+    border-style: ridge;
+}

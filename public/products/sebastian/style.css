@@ -1,0 +1,31 @@
+@BackgroundColor: #EAEAEA;
+@PrimaryColor: #80FF80;
+@SecondaryColor: #FF8080;
+
+* {
+	font-family: "Open Sans";
+}
+
+html {
+	background: @BackgroundColor;
+}
+
+body {
+
+}
+
+nav, main, section, article {
+	display: block;
+}
+
+header {
+
+}
+
+nav {
+	background: @SecondaryColor;
+}
+
+nav a {
+	background: @PrimaryColor;
+}
