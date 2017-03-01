@@ -22,9 +22,8 @@ class Database {
 	}
 
 	public static function Exists() {
-		global $CONFIG;
-		$DB_CONF = $CONFIG['DATABASE'];
-		$Query = self::$Connection->query('SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = ' . $DB_CONF['NAME']);
+		$Name = Config::Database('NAME');
+		$Query = self::$Connection->query("SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = $Name");
 		if (!$Query) {
 			return false;
 		}
