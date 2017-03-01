@@ -1,0 +1,45 @@
+.active{
+    background: linear-gradient(#000000, #010101, #111111);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: -4px;
+}
+nav ul li {
+    display: inline;
+    margin-left: -4px;
+}
+nav li:first-child a {
+    border-radius: 4px 0 0 4px;
+}
+nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 4px 4px 0;
+}
+nav ul {
+    display: inline;
+    background: linear-gradient(#000000, #010101, #111111);
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 0 4px 4px 0;
+}
+nav ul li a{
+    color: rgb(194, 190, 190);
+
+}
+a:link, a:visited {
+    text-decoration: none;	
+    color: linear-gradient(#099009, #922910, #189028);
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    text-decoration: none;
+    background: linear-gradient(#005C00, #023802, #008700);
+    /*color: linear-gradient(rgb(198, 87, 34), rgb(163, 71, 29));*/	
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
