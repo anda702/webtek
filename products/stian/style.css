@@ -25,6 +25,21 @@ body{
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{
     display:block;
 }
+figcaption{
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 25px;
+    position: relative;
+    font-style: italic;
+    font-size: 90%;
+    line-height: normal;
+    color: #333;
+    line-height: 16px;
+    padding-left: 5px;
+
+}
 .sidenav {
     width: 120px;background: white;
 }
@@ -42,15 +57,15 @@ article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summ
     overflow:visible;
 }
 .sidenav a{
-    text-decoration:none
+    display:block;
+    padding:4px 2px 4px 16px;
+    text-decoration:none;
+    color: black;
 }
 .sidenav a:hover{
     background-color:#ccc
 }
-.sidenav a{
-    display:block;
-    padding:4px 2px 4px 16px;
-}
+
 .center{
     text-align:center
 }
@@ -66,22 +81,111 @@ article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summ
     width:70%
 }
 .padding-large{
-    padding:12px 24px
+    padding:12px 24px;
+}
+.image{
+    max-width:100%;
+    height:auto
 }
 .hover-black:hover{
     color:#fff!important;
     background-color:#000!important
 }
 .xxlarge{
-    font-size:36px
+    font-size:36px;
+}
+.white,.hover-white:hover{
+    color:#000;
+    background-color:#fff;
+}
+.jumbo{
+    font-size:5em;
 }
 
 #main {
     margin-left: 120px
 }
+li.dropnav {
+    display: inline-block;
+}
+.clear{
+    clear: both;
+}
+.dropnav-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropnav-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropnav-content a:hover {
+    background-color: #f1f1f1
+}
 
-
-
+.dropnav:hover .dropnav-content{
+    display: block;
+}
+.dropnav{
+    position: fixed;
+    z-index: 1;
+}
+li a, .menybtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.text-gray,.hover-text-gray:hover{
+    color:#757575;
+}
+.container{
+    padding:0.01em 16px
+}
+.padding-12{
+    padding-top:12px!important;
+    padding-bottom:12px!important
+}
+.padding-16{
+    padding-top:16px!important;
+    padding-bottom:16px!important
+}
+.padding-32{padding-top:32px!important;
+           padding-bottom:32px!important
+}
+.padding-64{
+    padding-top:64px;
+    padding-bottom:64px;
+}
+.ingress{
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 16px;
+}
+.slimimage img{
+    width: 110%;
+}
+.content{
+    max-width:980px;
+    margin:auto;
+}
+.text-yellow,.hover-text-yellow:hover{
+    color:#d2be0e!important
+}
+.text-purple,.hover-text-purple:hover{
+    color:#9c27b0!important
+}
+.text-indigo,.hover-text-indigo:hover{
+    color:#3f51b5!important
+}
 
 /* Change the size to fit smaller screens*/
 @media screen and (max-width:700px){
@@ -102,5 +206,57 @@ article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summ
 @media (max-width:990px) and (min-width:700px){
     .hide-medium{
         display:none!important
+    }
+}
+@media screen and (max-width:990px){
+    .sidenav.collapse{
+        display:none
+    }.main{
+        margin-left:0!important;
+        margin-right:0!important
+    }
+}
+@media screen and (min-width:990px){
+    .sidenav.collapse{
+        display:block!important
+    }
+}
+@media screen and (max-width:1260px){
+    .content{max-width: 70%;
+    }
+}
+@media screen and (max-width:700px){
+    .dropnav-hover .dropnav-content,.sidenav .dropnav-click .dropnav-content,.dropnav-hover .dropnav-content{
+        position:relative;
+    }
+}
+@media screen and (max-width:700px){
+    .center{
+        width: 100%;
+    }
+    .content{
+        max-width: 94%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #main {
+        margin-left: 0
+    } 
+    .medium{
+        margin-left:80px;
+    }
+}
+@media screen and (max-width:700px){
+    .slimimage img{
+        width: 110%;
+    }
+    .button{
+        padding:0;
+        text-decoration:none;
+        box-shadow: 0;
+        border: none;
+        border-radius: 0;
+        margin:30px;
+        display: table;
     }
 }
