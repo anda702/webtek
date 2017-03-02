@@ -24,11 +24,15 @@ Router::Bind('ajax/page/{name}', function($Name) {
 	exit;
 });
 
-Router::Bind('ajax/product/{name}', function($Name) {
-	$Name = strtolower($Name);
-	if (file_exists('../products/' . $Name)) {
+// Assets of a product page
+Router::Bind('products/{product}/{file}', function($Product, $File) {
+	PrintProductFile($Product, $File);
+	exit;
+});
 
-	}
+// Index of a product page
+Router::Bind('products/{product}', function($Product) {
+	PrintProductFile($Product, 'index.html');
 	exit;
 });
 
