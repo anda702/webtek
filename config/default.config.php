@@ -4,9 +4,9 @@ class Config {
 
 	private static $Config = [
 		'DATABASE' => [
-			'HOST' => '',
-			'NAME' => '',
-			'USER' => '',
+			'HOST' => 'localhost',
+			'NAME' => 'webtek',
+			'USER' => 'root',
 			'PASS' => ''
 		],
 
@@ -18,13 +18,13 @@ class Config {
 		],
 
 		'TEXT' => [
-			'TITLE' => '',
-			'COPYRIGHT' => '© 2017'
+			'TITLE' => 'Webtek',
+			'COPYRIGHT' => '© 2017 Webtek'
 		],
 
 		'META' => [
-			'DESCRIPTION' => '',
-			'KEYWORDS' => ''
+			'DESCRIPTION' => 'Webtek utvikler flotte maler til dine nettsider!',
+			'KEYWORDS' => 'Webtek, utvikling, maler, nettsider, internettsider, html, css, design, webutvikling, web'
 		]
 
 	];
