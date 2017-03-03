@@ -3,12 +3,6 @@
 class Config {
 
 	private static $Config = [
-		'DATABASE' => [
-			'HOST' => 'localhost',
-			'NAME' => 'webtek',
-			'USER' => 'root',
-			'PASS' => ''
-		],
 
 		'OPTIONS' => [
 			// Refuse http connections. Automatically redirect to https with 301 response.
@@ -34,10 +28,6 @@ class Config {
 			return $Array;
 		}
 		return $Array[$Key];
-	}
-
-	public static function Database($Key = false) {
-		return self::Access(self::$Config['DATABASE'], $Key);
 	}
 
 	public static function Options($Key = false) {

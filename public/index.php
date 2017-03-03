@@ -4,7 +4,6 @@ require_once('../config/config.php');
 require_once(Config::Src() . 'route.php');
 require_once(Config::Src() . 'print.php');
 require_once(Config::Src() . 'security.php');
-require_once(Config::Src() . 'database.php');
 
 ForceSSL();
 
@@ -13,10 +12,6 @@ header('X-XSS-Protection: 1; mode=block');
 header('X-Content-Type-Options: nosniff');
 
 session_start();
-
-if (!Database::Connect()) {
-	die('Could not connect to database.');
-}
 
 Router::Bind('ajax/page/{name}', function($Name) {
 	SetActivePage($Name);
