@@ -4,6 +4,16 @@
     padding-bottom: 14px;
     padding-right: -4px;
 }
+
+main{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+header nav{
+    text-align: center;
+}
 nav ul li {
     display: inline;
     margin-left: -4px;
@@ -19,8 +29,8 @@ nav ul {
     display: inline;
     background: linear-gradient(#000000, #010101, #111111);
     text-align: center;
-    padding: 15px 25px;
-    border-radius: 0 4px 4px 0;
+    padding: 15px 100px;
+    border-radius: 4px 4px 4px 4px;
 }
 nav ul li a{
     color: rgb(194, 190, 190);
@@ -28,7 +38,7 @@ nav ul li a{
 }
 a:link, a:visited {
     text-decoration: none;	
-    color: linear-gradient(#099009, #922910, #189028);
+    background: linear-gradient(#000000, #010101, #111111);
     padding: 14px 25px;
     text-align: center;
     display: inline-block;
