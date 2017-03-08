@@ -26,4 +26,13 @@ function PrintLinks($Links, $Separator) {
 	echo substr($Html, 0, -strlen($Separator));
 }
 
+function PrintProductFile($Product, $File) {
+	$Path = 'products/' . $Product . '/' . $File;
+	if (file_exists($Path)) {
+		echo file_get_contents($Path);
+	} else {
+		echo 'Bad luck. File does not exist.';
+	}
+}
+
 ?>

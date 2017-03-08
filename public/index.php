@@ -4,7 +4,6 @@ require_once('../config/config.php');
 require_once(Config::Src() . 'route.php');
 require_once(Config::Src() . 'print.php');
 require_once(Config::Src() . 'security.php');
-require_once(Config::Src() . 'database.php');
 
 ForceSSL();
 
@@ -14,21 +13,21 @@ header('X-Content-Type-Options: nosniff');
 
 session_start();
 
-if (!Database::Connect()) {
-	die('Could not connect to database.');
-}
-
 Router::Bind('ajax/page/{name}', function($Name) {
 	SetActivePage($Name);
 	PrintActivePage();
 	exit;
 });
 
-Router::Bind('ajax/product/{name}', function($Name) {
-	$Name = strtolower($Name);
-	if (file_exists('../products/' . $Name)) {
+// Assets of a product page
+Router::Bind('products/{product}/{file}', function($Product, $File) {
+	PrintProductFile($Product, $File);
+	exit;
+});
 
-	}
+// Index of a product page
+Router::Bind('products/{product}', function($Product) {
+	PrintProductFile($Product, 'index.html');
 	exit;
 });
 

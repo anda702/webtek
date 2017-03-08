@@ -3,12 +3,6 @@
 class Config {
 
 	private static $Config = [
-		'DATABASE' => [
-			'HOST' => '',
-			'NAME' => '',
-			'USER' => '',
-			'PASS' => ''
-		],
 
 		'OPTIONS' => [
 			// Refuse http connections. Automatically redirect to https with 301 response.
@@ -18,13 +12,13 @@ class Config {
 		],
 
 		'TEXT' => [
-			'TITLE' => '',
-			'COPYRIGHT' => '© 2017'
+			'TITLE' => 'Webtek',
+			'COPYRIGHT' => '© 2017 Webtek'
 		],
 
 		'META' => [
-			'DESCRIPTION' => '',
-			'KEYWORDS' => ''
+			'DESCRIPTION' => 'Webtek utvikler flotte maler til dine nettsider!',
+			'KEYWORDS' => 'Webtek, utvikling, maler, nettsider, internettsider, html, css, design, webutvikling, web'
 		]
 
 	];
@@ -34,10 +28,6 @@ class Config {
 			return $Array;
 		}
 		return $Array[$Key];
-	}
-
-	public static function Database($Key = false) {
-		return self::Access(self::$Config['DATABASE'], $Key);
 	}
 
 	public static function Options($Key = false) {
