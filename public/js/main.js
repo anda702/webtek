@@ -1,27 +1,36 @@
 function isExternalLink(link) {
-	return link.search('http') != -1;
+    return link.search('http') != -1;
 }
 
 function loadPage(link) {
+<<<<<<< HEAD
 	$('.main-wrapper').load('/ajax/page' + link);
 	history.pushState({}, '', link);
+=======
+    $('main').load('/ajax/page' + link);
+    history.pushState({}, '', link);
+>>>>>>> 00ba18492fb1d50254666e7fca3454d6ad040d5d
 }
 
 $(document)
 
 .on('click', 'a', function(e) {
-	var link = $(this).attr('href');
-	if (isExternalLink(link)) {
-		return;
-	}
-	e.preventDefault();
-	loadPage(link);
+    var link = $(this).attr('href');
+    if (isExternalLink(link)) {
+        return;
+    }
+    e.preventDefault();
+    loadPage(link);
+})
+
+.on('keyup', '.input-check', function() {
+    $(this).attr('value', $(this).val());
 })
 
 ;
 
 $(window).bind('popstate', function(e) {
-	location.reload();
+    location.reload();
 });
 
 
