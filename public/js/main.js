@@ -7,26 +7,39 @@ function loadPage(link) {
     history.pushState({}, '', link);
 }
 
+function useLink(a) {
+    var link = $(a).attr('href');
+    if (isExternalLink(link)) {
+        return false;
+    }
+    loadPage(link);
+    return true;
+}
+
 function updateTextInput(val) {
     var maxValue = $('.priceRange[type="range"]').prop('max');
     var minValue = $('.priceRange[type="range"]').prop('min');
-    document.getElementById('priceRangeOutput').value = "Price: $" + minValue + " - $" + val;
+    $('#priceRangeOutput').val('Price: $' + minValue + ' - $' + val);
 }
 
 $(document)
 
 .ready(function() {
-    localStorage.clear();
     $('.toTop').hide();
 })
 
 .on('click', 'a', function(e) {
-    var link = $(this).attr('href');
-    if (isExternalLink(link)) {
-        return;
+    if (useLink(this)) {
+        e.preventDefault();
     }
-    e.preventDefault();
-    loadPage(link);
+})
+
+.on('click', 'nav a', function(e) {
+    if (useLink(this)) {
+        e.preventDefault();
+    }
+    $('nav li').removeClass('active');
+    $(this).parent().addClass('active');
 })
 
 .on('keyup', '.input-check', function() {
