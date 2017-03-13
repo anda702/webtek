@@ -39,38 +39,30 @@ Router::Bind('products/{product}', function($Product) {
 Router::Execute();
 
 ?><!doctype html>
-<html lang="en">
+<html lang="en" id="top">
 	<head>
 		<title><?php echo Config::Text('TITLE'); ?></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="<?php echo Config::Meta('DESCRIPTION'); ?>">
 		<meta name="keywords" content="<?php echo Config::Meta('KEYWORDS'); ?>">
-		<link rel="shortcut icon" href="/assets/icon.png">
-		<link rel="stylesheet" type="text/less" href="/css/style.css">
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans%7CSource+Sans+Pro:200">
+		<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300|Lora|Ubuntu" rel="stylesheet">
 		<script src="/js/thirdparty/jquery-2.1.4.min.js" type="text/javascript"></script>
-		<script src="/js/thirdparty/less.min.js" type="text/javascript"></script>
+		<!--<script src="/js/thirdparty/less.min.js" type="text/javascript"></script>-->
 		<script src="/js/main.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<header>
-			<h1><?php echo Config::Text("TITLE"); ?></h1>
+			<?php include('html/header.html'); ?>
 		</header>
-		<main>
+		<div class="main-wrapper">
 			<?php PrintActivePage(); ?>
-		</main>
+		</div>
 		<footer>
-			<p><?php echo Config::Text('COPYRIGHT'); ?></p>
-			<p>
-				<?php
-				PrintLinks([
-					'contact' => 'Contact',
-					'privacy' => 'Privacy Policy',
-					'about' => 'About'
-				], '|');
-				?>
-			</p>
+			<?php include('html/footer.html'); ?>
 		</footer>
 	</body>
 </html>
