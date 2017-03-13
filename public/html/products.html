@@ -1,4 +1,185 @@
-<section>
-	<h2>Products</h2>
-	<p>Look at all these products.</p>
-</section>
+<aside>
+
+    <h4>Sort by</h4>
+    <div class="select-wrapper">
+        <select name="orderBy">
+                    <option value="newest" selected="selected">Newest item</option>
+                    <option value="popularity">Sort by: Popularity</option>
+                    <option value="rating">Sort by: Average rating</option>
+                    <option value="lowToHigh">Price: Low to high</option>
+                    <option value="highToLow">Price: High to low</option>
+            </select>
+    </div>
+
+    <hr>
+
+    <h4>Filter by price</h4>
+    <form>
+        <input type="range" min="0" max="500" value="450" class="priceRange" name="priceRange" onchange="updateTextInput(this.value);">
+        <div class="priceRangeWrapper">
+            <button class="btn-themed btn-xsmall btn-flat">Filter</button>
+            <input type="text" id="priceRangeOutput" value="Price: $0 - $450" name="priceRangeOutput" readonly>
+        </div>
+    </form>
+
+    <hr>
+
+    <h4>Product Categories</h4>
+
+    <ul class="shopCategories">
+        <li><a>Corporate<span>4</span></a></li>
+        <li><a>Blog<span>12</span></a></li>
+        <li><a>Personal<span>10</span></a></li>
+        <li><a>E-commerce<span>8</span></a></li>
+        <li><a>Wordpress</a></li>
+        <ul>
+            <li><a>Corporate<span>4</span></a></li>
+            <li><a>E-commerce<span>0</span></a></li>
+        </ul>
+
+</aside>
+
+<main>
+
+    <h1>Shop page</h1>
+
+    <ul class="shopListGrid">
+        <li>
+            <a><img src="/images/color-paint-palette-wall-painting.jpg" alt="Hot and Cold"></a>
+            <div class="rating-10">
+                <h3>Hot and Cold</h3>
+            </div>
+        </li>
+        <li>
+            <a><img src="/images/pexels-photo-28245.jpg" alt="Summer field"></a>
+            <div class="rating-7">
+                <h3>A fantastic colorful summer field</h3>
+            </div>
+        </li>
+        <li>
+            <a><img src="/images/yellow-metal-design-decoration.jpg" alt="Wireless clutter"></a>
+            <div class="rating-3">
+                <h3>Wireless clutter</h3>
+            </div>
+        </li>
+
+
+        <div class="productPage">
+
+            <!-- Image section -->
+            <ul>
+                <!-- Main image -->
+                <li><img src="/images/pexels-photo-28245.jpg" alt=""></li>
+                <li>
+                    <!-- Image gallery -->
+                    <ul>
+                        <li>
+                            <a href="#" onclick="return false;"><img src="/images/man-coffee-cup-pen.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false;"><img src="/images/pexels-photo-306198.jpeg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false;"><img src="/images/color-paint-palette-wall-painting.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false;"><img src="/images/pexels-photo-265613.jpeg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false;"><img src="/images/yellow-metal-design-decoration.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Content section -->
+            <ul>
+                <li>
+                    <h2>Title</h2>
+                </li>
+                <!-- Price / reviews -->
+                <li>
+                    <hr>
+                    <div>
+                        <del>$10</del>$10
+                    </div>
+                    <div>
+                        <a href="#" onclick="return false;">(2 reviews)</a><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                    <hr>
+                </li>
+                <!-- END: Price / reviews -->
+                <!-- Product Description -->
+                <li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci urna, consequat sit amet est ut, hendrerit eleifend urna. Pellentesque id nisl quis nibh tristique rhoncus vitae ac libero. Etiam eu dictum lacus. Nunc ac sagittis
+                        augue. Donec vel viverra orci, id pretium lacus. Sed hendrerit odio nec ex tempor pretium. Sed lobortis interdum purus non egestas. Aenean erat nunc, cursus ut velit cursus, pulvinar lacinia odio. Praesent ut semper nisi. Vivamus
+                        consectetur eu neque eu consectetur. Ut consectetur consequat condimentum. Phasellus cursus nisi sit amet lectus bibendum ornare. Sed in pharetra lacus. Mauris tellus enim, pharetra vel elit vel, accumsan lobortis purus.</p>
+
+                    <p>Praesent pretium vel erat nec bibendum. Suspendisse nisl mi, egestas nec tempus ut, hendrerit et odio. Mauris vel mi rutrum, tempor turpis ut, laoreet ipsum. Maecenas a feugiat neque. Aliquam at porttitor arcu. Aliquam accumsan nunc
+                        vitae dapibus gravida. In sit amet aliquam dui. Pellentesque commodo erat elementum magna auctor hendrerit. </p>
+
+                    <p>Quisque eget velit et elit varius posuere sit amet non mi. Cras accumsan diam at lectus aliquet, non ultrices tortor lobortis. Praesent scelerisque tortor a accumsan ultricies. Pellentesque purus elit, accumsan et bibendum quis, varius
+                        in orci. Aliquam vitae posuere risus. Morbi maximus consequat purus, eget egestas libero iaculis non. Fusce ac congue elit. Mauris magna risus, accumsan at ex sit amet, maximus tristique ante. Curabitur ac leo erat. Aenean tempus
+                        elit quis mauris malesuada, id porttitor dolor euismod. Nullam massa eros, porttitor id dictum eget, euismod vel velit. Nam eget interdum elit.</p>
+
+
+                    <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum mattis nisi mauris, vel volutpat tortor euismod vel. Nam euismod, nunc id suscipit laoreet, odio nisl euismod dolor, nec ultrices sapien
+                        mauris eu risus. Nunc consequat nulla ac velit interdum, vitae consectetur orci tristique. Nam volutpat purus id elit dignissim, vel laoreet elit sollicitudin. Maecenas sit amet fermentum odio. Vestibulum interdum, nulla eget dignissim
+                        facilisis, tellus orci mollis libero, quis mollis mi libero sit amet ex. Nulla odio ipsum, sollicitudin vitae tortor ac, consequat malesuada dolor. Morbi porttitor, massa a blandit lacinia, justo massa lobortis ipsum, eget mattis
+                        nulla magna vel purus. Curabitur eros augue, sollicitudin id pulvinar ac, sodales at velit. Maecenas viverra bibendum felis, non venenatis diam elementum eget. Nam dignissim venenatis mi in sollicitudin. Cras felis ante, euismod
+                        quis dui ut, suscipit elementum dolor.</p>
+
+                    <p>Donec posuere nisl mauris, in euismod metus efficitur non. Pellentesque ornare tortor urna, id fringilla velit ornare ultricies. Nullam eget urna volutpat, molestie nulla eget, luctus augue. Nunc molestie nisl ac orci dictum, quis
+                        mattis est viverra. Phasellus tristique gravida sem id vestibulum. Sed commodo faucibus nulla, non cursus nisi convallis vulputate. Phasellus vel ante nec elit placerat porttitor. Phasellus sollicitudin, leo a consectetur dapibus,
+                        erat dui tempor ante, ut elementum tellus nisl eu mauris. Aenean quis semper est, vitae ultricies ante. Duis in magna quis nulla sollicitudin accumsan.</p>
+
+                    <p>Ut pulvinar ullamcorper leo, eget mollis enim. Cras maximus felis id nibh condimentum, a rhoncus lacus tincidunt. Aenean dolor est, maximus nec nisi nec, venenatis molestie nulla. Aenean facilisis velit eu dui imperdiet consequat.
+                        Praesent est justo, rhoncus varius justo ac, malesuada auctor erat. Mauris consectetur egestas augue a pulvinar. Sed accumsan odio sit amet lectus aliquet, aliquet cursus erat fermentum. Pellentesque suscipit, sapien nec tincidunt
+                        faucibus, justo ante lobortis orci, sed blandit urna turpis consectetur est. Cras venenatis vehicula tortor a sagittis. Proin suscipit leo a purus efficitur aliquet. Sed nibh erat, pellentesque vitae tempor sed, egestas at nulla.
+                        Nunc felis risus, cursus a accumsan non, scelerisque nec erat. In id malesuada massa. Nullam sollicitudin dui ut massa commodo, non rutrum sem blandit. Morbi quis consequat massa, sit amet rhoncus nibh. Nunc commodo orci elementum
+                        ante pharetra sollicitudin quis sed lacus.</p>
+                </li>
+                <!-- END: Product Description -->
+                <!-- Description footer -->
+                <li>
+                    <a href="#" onclick="return false;" class="btn-themed">Add to cart</a>
+                </li>
+                <!-- END: Description footer -->
+            </ul>
+            <!-- END: Content section -->
+
+            <hr>
+
+            <div>
+                <h2>Item Details</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci urna, consequat sit amet est ut, hendrerit eleifend urna. Pellentesque id nisl quis nibh tristique rhoncus vitae ac libero. Etiam eu dictum lacus. Nunc ac sagittis augue.
+                    Donec vel viverra orci, id pretium lacus. Sed hendrerit odio nec ex tempor pretium. Sed lobortis interdum purus non egestas. Aenean erat nunc, cursus ut velit cursus, pulvinar lacinia odio. Praesent ut semper nisi. Vivamus consectetur
+                    eu neque eu consectetur. Ut consectetur consequat condimentum. Phasellus cursus nisi sit amet lectus bibendum ornare. Sed in pharetra lacus. Mauris tellus enim, pharetra vel elit vel, accumsan lobortis purus.</p>
+
+                <p>Praesent pretium vel erat nec bibendum. Suspendisse nisl mi, egestas nec tempus ut, hendrerit et odio. Mauris vel mi rutrum, tempor turpis ut, laoreet ipsum. Maecenas a feugiat neque. Aliquam at porttitor arcu. Aliquam accumsan nunc vitae
+                    dapibus gravida. In sit amet aliquam dui. Pellentesque commodo erat elementum magna auctor hendrerit. </p>
+
+                <p>Quisque eget velit et elit varius posuere sit amet non mi. Cras accumsan diam at lectus aliquet, non ultrices tortor lobortis. Praesent scelerisque tortor a accumsan ultricies. Pellentesque purus elit, accumsan et bibendum quis, varius
+                    in orci. Aliquam vitae posuere risus. Morbi maximus consequat purus, eget egestas libero iaculis non. Fusce ac congue elit. Mauris magna risus, accumsan at ex sit amet, maximus tristique ante. Curabitur ac leo erat. Aenean tempus elit
+                    quis mauris malesuada, id porttitor dolor euismod. Nullam massa eros, porttitor id dictum eget, euismod vel velit. Nam eget interdum elit.</p>
+
+            </div>
+
+            <hr>
+
+            <div>
+                <h2>Reviews</h2>
+                <blockquote>
+                    It's super awesome!
+                </blockquote>
+
+                <blockquote>
+                    Had some problems, but it's ok now...
+                    <br>Great support btw!
+                </blockquote>
+            </div>
+
+        </div>
+        <!-- END: productPage -->
+
+</main>
