@@ -1,11 +1,16 @@
 <?php
 
 require_once('../config/config.php');
-require_once(Config::Src() . 'route.php');
+require_once(Config::Src() . 'router.php');
 require_once(Config::Src() . 'print.php');
-require_once(Config::Src() . 'security.php');
 
-ForceSSL();
+if (Config::Options('FORCE_SSL')) {
+	if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == 'off') {
+		header('Location: https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'], true, 301);
+		exit;
+	}
+	header('Strict-Transport-Security: max-age=31536000; includeSubDomains');
+}
 
 header('Content-Type: text/html; charset=utf-8');
 header('X-XSS-Protection: 1; mode=block');

@@ -3,7 +3,7 @@ function isExternalLink(link) {
 }
 
 function loadPage(link) {
-	$('main').load('/ajax/page' + link);
+	$('.main-wrapper').load('/ajax/page' + link);
 	history.pushState({}, '', link);
 }
 
