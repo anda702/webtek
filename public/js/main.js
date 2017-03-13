@@ -19,7 +19,7 @@ $(document)
 })
 
 .on('keyup', '.input-check', function() {
-    this.setAttribute('value', this.value);
+    $(this).attr('value', $(this).val());
 })
 
 ;
