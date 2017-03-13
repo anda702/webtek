@@ -3,13 +3,8 @@ function isExternalLink(link) {
 }
 
 function loadPage(link) {
-<<<<<<< HEAD
-	$('.main-wrapper').load('/ajax/page' + link);
-	history.pushState({}, '', link);
-=======
-    $('main').load('/ajax/page' + link);
+    $('.main-wrapper').load('/ajax/page' + link);
     history.pushState({}, '', link);
->>>>>>> 00ba18492fb1d50254666e7fca3454d6ad040d5d
 }
 
 $(document)
