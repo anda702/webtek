@@ -70,6 +70,8 @@ article {
     margin-top: 50px;
     margin-left: 10%;
     margin-right: 10%;
+    color: Black;
+    font-size: 20px;
 }
 
 h1 {
@@ -81,7 +83,7 @@ h2 {
     font-weight: bold;
     font-style: italic;
     text-align: center;
-    color: #65a9d7;
+    color: black;
 }
 
 section {}
@@ -93,8 +95,9 @@ section {}
 footer {
     bottom: 15px;
     clear: both;
-    color: red;
+    color: black;
     text-align: center;
+    font-style: italic;
 }
 
 a. {
