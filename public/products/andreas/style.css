@@ -5,7 +5,7 @@
     padding-right: -4px;
 }
 body{
-
+    background-color: #04323F;
 }
 article{
 }
@@ -13,7 +13,6 @@ aside{
     position: absolute;
     top: 10%;
     right: 10%;
-    
 }
 ul{
     list-style-type: none;
@@ -21,13 +20,14 @@ ul{
 main{
     margin-left: 30%;
     margin-right: 30%;
-    background-color: #000000;
+    background-color: #011F27;
     color: #B5BCC4;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+    padding: 5px 10px;
+    border-radius: 8px 8px 8px 8px;
 }
 header nav{
     text-align: center;
