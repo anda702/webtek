@@ -26,6 +26,15 @@ $(document)
 
 .ready(function() {
     $('.toTop').hide();
+    var url = window.location;
+    switch (url.pathname) {
+    case '/':
+    case '/home':
+    case '/shop':
+    case '/contact':
+        $('nav li a[href="' + url.pathname + '"]').parent().addClass('active');
+        break;
+    }
 })
 
 .on('click', 'a', function(e) {
