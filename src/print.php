@@ -5,7 +5,7 @@ $ACTIVE_PAGE = '';
 function SetActivePage($Name) {
 	global $ACTIVE_PAGE;
 	$Name = strtolower($Name);
-	if ($Name == 'home' || $Name == 'contact' || $Name == 'shop') {
+	if ($Name == '' || $Name == 'home' || $Name == 'contact' || $Name == 'shop') {
 		$ACTIVE_PAGE = $Name;
 	}
 }

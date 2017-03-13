@@ -38,7 +38,7 @@ body {
 }
 
 header,
-.main-wrapper {
+main {
     background: @color-platinum;
 }
 
@@ -954,7 +954,7 @@ nav {
 //---------------------------------------------------
 // Main & Sidebar
 //---------------------------------------------------
-.main-wrapper {
+main {
     display: flex;
     align-items: stretch;
     border-bottom: 5px solid @color-main;
@@ -1042,7 +1042,7 @@ aside {
     color: @color-platinum;
 }*/
 
-main {
+section {
     flex: auto;
     padding: 15px;
     box-shadow: inset 0px 0px 15px @color-grey-light;
@@ -1668,18 +1668,18 @@ aside {
 }
 
 @media print {
-    aside,
+    main > aside,
     footer,
     header,
     .toTop {
         visibility: hidden;
         display: none;
     }
-    .main-wrapper {
+    main {
         background: none;
         box-shadow: none;
     }
-    main {
+    main > section {
         flex: auto;
         padding: 0;
         box-shadow: none;

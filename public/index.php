@@ -36,10 +36,14 @@ Router::Bind('products/{product}', function($Product) {
 	exit;
 });
 
+Router::Bind('{page}', function($Page) {
+	SetActivePage($Page);
+});
+
 Router::Execute();
 
 ?><!doctype html>
-<html lang="en" id="top">
+<html lang="en">
 	<head>
 		<title><?php echo Config::Text('TITLE'); ?></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -47,20 +51,20 @@ Router::Execute();
 		<meta name="description" content="<?php echo Config::Meta('DESCRIPTION'); ?>">
 		<meta name="keywords" content="<?php echo Config::Meta('KEYWORDS'); ?>">
 		<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/less" href="/css/style.less">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Raleway:300|Lora|Ubuntu" rel="stylesheet">
 		<script src="/js/thirdparty/jquery-2.1.4.min.js" type="text/javascript"></script>
-		<!--<script src="/js/thirdparty/less.min.js" type="text/javascript"></script>-->
+		<script src="/js/thirdparty/less.min.js" type="text/javascript"></script>
 		<script src="/js/main.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<header>
 			<?php include('html/header.html'); ?>
 		</header>
-		<div class="main-wrapper">
+		<main>
 			<?php PrintActivePage(); ?>
-		</div>
+		</main>
 		<footer>
 			<?php include('html/footer.html'); ?>
 		</footer>
