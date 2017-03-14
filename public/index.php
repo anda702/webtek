@@ -54,8 +54,8 @@ Router::Execute();
 		<link rel="stylesheet" type="text/less" href="/css/style.less">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Raleway:300|Lora|Ubuntu" rel="stylesheet">
-		<script src="/js/thirdparty/jquery-2.1.4.min.js" type="text/javascript"></script>
-		<script src="/js/thirdparty/less.min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" type="text/javascript"></script>
 		<script src="/js/main.js" type="text/javascript"></script>
 	</head>
 	<body>
