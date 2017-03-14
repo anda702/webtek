@@ -21,55 +21,76 @@ function PrintRating($Rating) {
 	}
 }
 
+function PrintProductOverview() {
+	global $PRODUCTS;
+	echo '<section>
+    <h1>Shop page</h1>
+	<ul class="shopListGrid">';
+	foreach ($PRODUCTS as $Name => $Product) {
+		echo '
+		<li>
+	        <a href="/view/' . $Name . '">
+	        	<img src="/images/products/' . $Name. '.png" alt="' . $Product['title'] . '">
+	        </a>
+	        <div class="rating-' . intval($Product['rating']) . '">
+	            <h3>' . $Product['title'] . '</h3>
+	        </div>
+	    </li>';
+	}
+	echo '</ul>
+	<hr>
+	</section>';
+}
+
 function PrintProductPage($ProductName) {
-	global $PAGES;
+	global $PRODUCTS;
 	$ProductName = strtolower($ProductName);
-	if (!isset($PAGES[$ProductName])) {
+	if (!isset($PRODUCTS[$ProductName])) {
 		echo '<p>Page not found.</p>';
 		return;
 	}
-	$Page = $PAGES[$ProductName];
+	$Product = $PRODUCTS[$ProductName];
 	echo '<aside></aside>
 	<section>
     <h1>Product page</h1>
     <div class="productPage">
         <ul>
-            <li><img src="' . $Page['image'] . '" alt=""></li>
+            <li><img src="/images/products/' . $ProductName. '.png" alt=""></li>
             <li>
                 <ul>';
-    if (isset($Page['gallery'])) {
-    	foreach ($Page['gallery'] as $Image) {
+    if (isset($Product['gallery'])) {
+    	foreach ($Product['gallery'] as $Image) {
     		echo '<li><a><img src="' . $Image['src'] . '" alt="' . $Image['alt'] .'"></a></li>';
     	}
     }
-               echo '</ul>
+    echo '</ul>
             </li>
         </ul>
         <ul>
             <li>
-                <h2>' . $Page['title'] . '</h2>
+                <h2>' . $Product['title'] . '</h2>
             </li>
             <li>
                 <hr>
                 <div>';
-    if (isset($Page['discountedPrice'])) {
-    	echo '<del>$' . $Page['price'] . '</del>$' . $Page['discountedPrice'];
+    if (isset($Product['discountedPrice'])) {
+    	echo '<del>$' . $Product['price'] . '</del>$' . $Product['discountedPrice'];
     } else {
-    	echo '$' . $Page['discountedPrice'];
+    	echo '$' . $Product['discountedPrice'];
     }
     echo '</div>';
-    $NumReviews = count($Page['reviews']);
+    $NumReviews = count($Product['reviews']);
     echo '<div>
           	<a>(' . $NumReviews . ' reviews)</a>';
-    if (isset($Page['rating'])) {
-	    PrintRating($Page['rating']);
+    if (isset($Product['rating'])) {
+	    PrintRating($Product['rating']);
 	} else {
 		PrintRating(0);
 	}
     echo '</div>
    			<hr>
             </li>
-            <li>' . $Page['description'] . '</li>
+            <li>' . $Product['description'] . '</li>
             <li>
                 <a class="btn-themed">Add to cart</a>
                 <a target="_blank" href="/products/' . $ProductName . '" class="btn-themed external">Preview Theme</a>
@@ -78,13 +99,13 @@ function PrintProductPage($ProductName) {
         <hr>
         <div>
             <h2>Item Details</h2>
-            ' . $Page['details'] . '
+            ' . $Product['details'] . '
         </div>
         <hr>
         <div>
         	<h2>Reviews</h2>';
-        if (isset($Page['reviews'])) {
-        	foreach ($Page['reviews'] as $Review) {
+        if (isset($Product['reviews'])) {
+        	foreach ($Product['reviews'] as $Review) {
         		echo '<blockquote>' . PrintRating($Review['rating']) . $Review['comment'] .'</blockquote>';
         	}
         }
@@ -118,6 +139,11 @@ function PrintActivePage() {
 		$ACTIVE_PAGE = 'home';
 	}
 	include('html/' . $ACTIVE_PAGE . '.html');
+	// Another terrible decision, but it's a last minute thing.
+	// If enough time; it should be restructured into templates instead.
+	if ($ACTIVE_PAGE == 'shop') {
+		PrintProductOverview();
+	}
 }
 
 function PrintLinks($Links, $Separator) {

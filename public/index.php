@@ -2,7 +2,7 @@
 
 require_once('../config/config.php');
 require_once(Config::Src() . 'router.php');
-require_once(Config::Src() . 'pages.php');
+require_once(Config::Src() . 'products.php');
 require_once(Config::Src() . 'print.php');
 
 if (Config::Options('FORCE_SSL')) {
