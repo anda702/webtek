@@ -59,7 +59,7 @@ $PAGES = [
 	]
 ];
 
-foreach ($PAGES as $Page) {
+foreach ($PAGES as &$Page) {
 	$Page['rating'] = 0;
 	foreach ($Page['reviews'] as $Review) {
 		$Page['rating'] += intval($Review['rating']);
