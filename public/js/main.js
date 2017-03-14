@@ -12,6 +12,9 @@ function useLink(a) {
     if (isExternalLink(link)) {
         return false;
     }
+    if ($(a).hasClass('external')) {
+        return false;
+    }
     loadPage(link);
     return true;
 }
@@ -27,8 +30,10 @@ $(document)
 .ready(function() {
     $('.toTop').hide();
     var url = window.location;
+    if (url.pathname == '/') {
+        url.pathname = '/home';
+    }
     switch (url.pathname) {
-    case '/':
     case '/home':
     case '/shop':
     case '/contact':
@@ -58,6 +63,10 @@ $(document)
 .on('click', '.toTop', function() {
     $('html, body').animate({ scrollTop: 0 }, 800);
     return false;
+})
+
+.on('change', '.priceRange', function() {
+    updateTextInput(this.value);
 })
 
 .on('scroll', 'window', function() {

@@ -42,14 +42,14 @@ figure {
 #animated-gif-container {
     width: 100px;
     height: 1000px;
-    background: #e0ffc7 url(https://media.giphy.com/media/l0NwLBQl5gXiwt5m0/giphy.gif) no-repeat center center;
+    background: #e0ffc7 url('giphy.gif') no-repeat center center;
     top: 0px;
 }
 
 #animated-gif-container2 {
     width: 100px;
     height: 1000px;
-    background: #e0ffc7 url(https://media.giphy.com/media/l0NwLBQl5gXiwt5m0/giphy.gif) no-repeat center center;
+    background: #e0ffc7 url('giphy.gif') no-repeat center center;
     right: 0px;
     top: 0px;
 }
