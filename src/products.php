@@ -115,10 +115,10 @@ $PRODUCTS = [
     ],
     'stian2' => [
         'title' => 'Sweet Silver Mist',
-        'price' => '22',
+        'price' => '25',
         'discountedPrice' => '19',
-        'description' => '<p>This is a more serious verion of the last page</p>',
-        'details' => '<p>This is a generic description.</p>',
+        'description' => '<p>This is a white&black theme. It is a clean and sleek-looking webpage made for personal use.</p>',
+        'details' => '<p>This is a theme that is intended to be a website about people or maybe even your pet. It can also be used as a blog or product site. You have a navigation bar on the left side, which is always visible and makes it easy to navigate the site.</p>',
         'gallery' => [
             [
                 'src' => '/images/pexels-photo-28245.jpg',
@@ -127,8 +127,8 @@ $PRODUCTS = [
         ],
         'reviews' => [
             [
-                'rating' => 4,
-                'comment' => 'Boring!'
+                'rating' => 5,
+                'comment' => ' A bit Boring!'
             ],
             [
                 'rating' => 9,
