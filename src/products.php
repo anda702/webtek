@@ -36,8 +36,8 @@ $PRODUCTS = [
 		'title' => 'TopRight Ultra',
 		'price' => '15',
 		'discountedPrice' => '10',
-		'description' => '<p>This is my nice simple page made for human users.</p>',
-		'details' => '<p>This is a generic description.</p>',
+		'description' => '<p>A great site if you want something simple</p>',
+		'details' => '<p>If you dont have a lot of information you want to show, this site fits you. It is a simple site that has great color combination and easy to read text.</p>',
 		'gallery' => [
 			[
 				'src' => '/images/pexels-photo-28245.jpg',
