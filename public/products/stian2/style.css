@@ -1,0 +1,331 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 1, 2017, 11:15:16 AM
+    Author     : Stian
+*/
+
+html,body{
+    font-family:"Verdana",sans-serif;
+    font-size:17px;
+    line-height:1.5
+}
+nav a p{
+	font-family: "Verdana",sans-serif;
+	font-size:16px;
+}
+html{
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    overflow-x:hidden;
+}
+body{
+	font-family: Courier New, serif;
+    margin:0;
+	background-color: #909090
+}
+h4,h2{
+    padding-left: 6%;
+    font-size: 1.5em;
+	color: white;	
+	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 2px 0 #bbb,
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 10px 10px rgba(0,0,0,.5);
+}
+
+nav{
+	display:inline-flex;
+}
+section article p {
+    padding-left: 8%;
+    padding-right: 8%;
+	font-family: "Montserrat", sans-serif;
+}
+.smedia{
+	position: fixed;
+	right:0;
+	padding-right:20px;
+	margin:5px;
+	font-family: initial;
+}
+footer{
+    font-size: 10px;
+	text-align:center;
+}
+figcaption{
+    display: block;
+    white-space: nowrap;
+    padding-left: 5px;
+	background-color: darkgray;
+    padding: 5px;
+    margin-top: -8px;
+	overflow-x:hidden;
+}
+
+.topnav{
+	display:inline-flex;
+	margin-left: 40%;
+	margin-right: 41%;
+	font-weight:bold;
+	color: white;
+	text-shadow: 0 1px 0 #ccc,
+	   0 6px 1px rgba(0,0,0,.1),
+	   0 0 5px rgba(0,0,0,.1),
+	   0 1px 3px rgba(0,0,0,.3),
+	   0 3px 5px rgba(0,0,0,.2),
+	   0 5px 10px rgba(0,0,0,.25),
+	   0 10px 10px rgba(0,0,0,.2),
+	   0 20px 20px rgba(0,0,0,.15);
+	}
+.topnav a{
+    
+    padding:0px 15px 0px 7px;
+    text-decoration:none;
+    color: #121111;
+
+}
+.topnav a:hover{
+	font-weight:bold;
+	font-shadow:20px;
+	border-radius: 14px 14px 14px 14px;
+	font-size: 17px;
+	z-index: 10;
+	overflow: inherit;
+}
+
+.topnav a *[class*="hover-"]
+{
+    -webkit-transition:background-color .25s,color .15s,box-shadow .25s,opacity 0.25s,filter 0.25s,border 0.15s;
+    transition:background-color .25s,color .15s,box-shadow .15s,opacity .25s,filter .25s,border .15s
+}
+.center{
+    text-align:center
+}
+.small{
+    font-size:11px
+}
+.roundpic img{
+    border-radius: 10%;
+    width:100%
+}
+.padding-large{
+    padding:12px 24px;
+}
+.image{
+    max-width:100%;
+    height:auto
+}
+.hover-black:hover{
+    color:#fff!important;
+    background-color:#000!important
+}
+.xlarge{
+    font-size:24px;
+}
+.xxlarge{
+    font-size:36px;
+}
+.white,.hover-white:hover{
+    color:#000;
+    background-color:#fff;
+}
+.jumbo{
+    font-size:4em;
+	color: white;
+	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+#main {
+    text-align:center;
+}
+li.dropnav {
+    display: inline-block;
+}
+.clear{
+    clear: both;
+}
+.dropnav-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropnav-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropnav-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropnav:hover .dropnav-content{
+    display: block;
+}
+.dropnav{
+    position: fixed;
+    z-index: 1;
+}
+li a, .menybtn {
+   
+    color: black;
+	margin-left:-15px;
+    text-decoration: none;
+}
+
+.container{
+    padding:0.01em 16px
+}
+.padding-12{
+    padding-top:12px!important;
+    padding-bottom:12px!important
+}
+.padding-16{
+    padding-top:16px!important;
+    padding-bottom:16px!important
+}
+.padding-32{
+	padding-top:32px!important;
+    padding-bottom:32px!important
+}
+.padding-64{
+    padding-top:64px;
+    padding-bottom:64px;
+}
+.ingress{
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 16px;
+}
+.slimimage img{
+    width: 100%;
+}
+.content{
+    max-width:980px;
+    margin:auto;
+}
+.text-yellow,.hover-text-yellow:hover{
+    color:#d2be0e!important
+}
+.text-purple,.hover-text-purple:hover{
+    color:#9c27b0!important
+}
+.text-indigo,.hover-text-indigo:hover{
+    color:#3f51b5!important
+}
+.text-gray,.hover-text-gray:hover{
+    color:#757575;
+}
+.text-red,.hover-text-red:hover{
+    color:#f44336;
+}
+.text-light-blue,.hover-text-light-blue:hover{
+    color:#4099ff;
+}
+.text-grey,.hover-text-grey:hover,.text-gray,.hover-text-gray:hover{
+    color:#757575;
+}
+
+/* Change the size to fit smaller screens*/
+@media screen and (max-width:700px){
+    .center{
+        width: 100%;
+    }
+}
+@media (max-width:700px){
+    .hide-small{
+        display:none
+    }
+}
+@media (min-width:990px){
+.hide-large{
+	display:none!important
+	}
+}
+@media (max-width:1300px){
+.smedia{
+	position: relative;
+	padding-right: 2px;
+	padding-left: 30px;
+	margin-left: 40%;
+}
+.jumbo{
+    font-size:25px;;
+}
+.padding-large{
+    padding:2px;
+}
+@media (max-width:700px){
+.smedia{
+	margin-left:7%;
+	padding-left: 60;
+}
+@media (max-width:990px) and (min-width:700px){
+.hide-medium{
+	display:none!important
+    }
+}
+@media screen and (max-width:990px){
+.main{
+	margin-left:0!important;
+	margin-right:0!important
+    }
+}
+
+@media screen and (max-width:1260px){
+.content{max-width: 70%;
+    }
+}
+@media screen and (max-width:700px){
+.dropnav-hover .dropnav-content,.dropnav-click .dropnav-content,.dropnav-hover .dropnav-content{
+	position:relative;
+}
+}
+@media screen and (max-width:700px){
+.center{
+	width: 100%;
+}
+.content{
+	max-width: 94%;
+}
+}
+@media only screen and (max-width: 700px) {
+#main {
+	margin-left: 0
+} 
+.medium{
+        margin-left:80px;
+    }
+}
+@media screen and (max-width:700px){
+    .link{
+        padding:0;
+        text-decoration:none;
+        box-shadow: 0;
+        border: none;
+        border-radius: 0;
+        margin:30px;
+        display: table;
+    }
+}
