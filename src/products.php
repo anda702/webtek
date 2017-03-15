@@ -113,6 +113,33 @@ $PRODUCTS = [
 			]
 		]
 	]
+    	'stian2' => [
+		'title' => 'Sweet Silver Mist',
+		'price' => '22',
+		'discountedPrice' => '19',
+		'description' => '<p>This is a more serious verion of the last page</p>',
+		'details' => '<p>This is a generic description.</p>',
+		'gallery' => [
+			[
+				'src' => '/images/pexels-photo-28245.jpg',
+				'alt' => 'Nice Photo'
+			]
+		],
+		'reviews' => [
+			[
+				'rating' => 4,
+				'comment' => 'Boring!'
+			],
+			[
+				'rating' => 9,
+				'comment' => 'Amazing shadows'
+			],
+			[
+				'rating' => 8,
+				'comment' => 'Close to perfect.'
+			]
+		]
+	]
 ];
 
 // Calculate average ratings
