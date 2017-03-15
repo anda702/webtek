@@ -5,8 +5,8 @@ $PRODUCTS = [
 		'title' => "COOL N' Fancy",
 		'price' => '35',
 		'discountedPrice' => '25',
-		'description' => '<p>This is my nice simple page made for human users.</p>',
-		'details' => '<p>This is a generic description.</p>',
+		'description' => '<p>This is a page that shines among its competitors</p>',
+		'details' => '<p>If you want a page that draws a lot of attencion, then this is the site for you</p>',
 		'gallery' => [
 			[
 				'src' => '/images/man-coffee-cup-pen.jpg',
