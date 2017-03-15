@@ -1,0 +1,140 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01.mar.2017, 10:53:19
+    Author     : Jenny
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 27, 2017, 9:41:34 AM
+    Author     : Jenny
+*/
+
+
+
+
+header, footer {
+    clear: both;
+    display: block; 
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    background-color: rgb(6,24,0);
+    font-size: 150%; 
+}
+
+div.container {
+    display: table;
+    width: 100%;
+    table-layout: fixed;     //For cells of equal size 
+}
+
+div.container span {
+    display: table-cell;
+    text-align: center;
+}
+
+.flexcont{
+    display: flex; 
+    flex-direction: ltr; 
+    justify-content: space-around; 
+}
+
+.flexitem{
+    border: 1px solid black; 
+    padding: 5px; 
+    margin: 5px; 
+    width: 30%;
+}
+
+section.ugh{
+    clear: both; 
+    display: flex; 
+    border: 1px solid black; 
+    padding: 5px; 
+    margin: 5px; 
+    width: 30%;
+    float: center; 
+
+}
+
+aside.mjau{
+    display: flex; 
+    border: 1px solid black; 
+    padding: 5px; 
+    margin: 5px; 
+    width: 30%;
+    float: left; 
+    left: 0px; 
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(6,24,0);
+}
+
+/*Float the list items side by side */
+ul.topnav li {float: left;}
+
+/*Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/*Change background color of links on hover */
+ul.topnav li a:hover {background-color: rgb(15,60,1);}
+
+/*Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/*When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:first-child) {display: none;}
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+/*The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {position: relative;}
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+
+
