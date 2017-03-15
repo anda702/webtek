@@ -82,36 +82,36 @@ $PRODUCTS = [
             ],
             [
                 'rating' => 6,
-                'comment' => 'Meh, it does the job.'
+                'comment' => 'Meh, it does the job.'	
             ]
         ]
     ],
-    'stian' => [
-        'title' => 'Stian Pro 3000',
-        'price' => '20',
-        'discountedPrice' => '15',
-        'description' => '<p>This is my nice simple page made for human users.</p>',
-        'details' => '<p>This is a generic description.</p>',
-        'gallery' => [
-            [
-                'src' => '/images/pexels-photo-28245.jpg',
-                'alt' => 'Nice Photo'
-            ]
-        ],
-        'reviews' => [
-            [
-                'rating' => 7,
-                'comment' => 'Impressive!'
-            ],
-            [
-                'rating' => 4,
-                'comment' => 'Definitely could be better.'
-            ],
-            [
-                'rating' => 9,
-                'comment' => 'Almost perfect.'
-            ]
-        ]
+	'stian' => [
+		'title' => 'White&Black 3000',
+		'price' => '20',
+		'discountedPrice' => '15',
+		'description' => '<p>This is a white&black theme. It is a clean and sleek-looking webpage made for personal use.</p>',
+		'details' => '<p>This is a theme that is intended to be a website about people or maybe even your pet. It can also be used as a blog or product site. You have a navigation bar on the left side, which is always visible and makes it easy to navigate the site.</p>',
+		'gallery' => [
+			[
+				'src' => '/images/pexels-photo-28245.jpg',
+				'alt' => 'Nice Photo'
+			]
+		],
+		'reviews' => [
+			[
+				'rating' => 7,
+				'comment' => 'Impressive!'
+			],
+			[
+				'rating' => 5,
+				'comment' => 'Definitely could be better.'
+			],
+			[
+				'rating' => 9,
+				'comment' => 'Almost perfect. Love the navigation bar!'
+			]
+		]
     ],
     'stian2' => [
         'title' => 'Sweet Silver Mist',
