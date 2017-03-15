@@ -166,6 +166,34 @@ $PRODUCTS = [
                 'comment' => 'Perfect for my use.'
             ]
         ]
+    ],
+	
+	'jenny' => [
+        'title' => 'Green swamp',
+        'price' => '33',
+        'discountedPrice' => '',
+        'description' => '<p>Green swamp brings the damp to your website. </p>',
+        'details' => '<p>Perfect for every Slytherin. </p>',
+        'gallery' => [
+            [
+                'src' => '/images/pexels-photo-265613.jpg',
+                'alt' => 'Nice Photo'
+            ]
+        ],
+        'reviews' => [
+            [
+                'rating' => 10,
+                'comment' => 'Perfect. '
+            ],
+            [
+                'rating' => 3,
+                'comment' => 'Not enough great squid. '
+            ],
+            [
+                'rating' => 2,
+                'comment' => 'Too much damp. '
+            ]
+        ]
     ]
 ];
 
