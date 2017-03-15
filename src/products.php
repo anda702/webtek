@@ -94,7 +94,7 @@ $PRODUCTS = [
 		'details' => '<p>This is a theme that is intended to be a website about people or maybe even your pet. It can also be used as a blog or product site. You have a navigation bar on the left side, which is always visible and makes it easy to navigate the site.</p>',
 		'gallery' => [
 			[
-				'src' => '/images/stian3.png',
+				'src' => '/images/products/stian3.png',
 				'alt' => 'Nice photo'
 			]
 		],
