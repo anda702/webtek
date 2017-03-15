@@ -112,7 +112,7 @@ $PRODUCTS = [
 				'comment' => 'Almost perfect.'
 			]
 		]
-	]
+	],
     	'stian2' => [
 		'title' => 'Sweet Silver Mist',
 		'price' => '22',
