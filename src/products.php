@@ -94,8 +94,8 @@ $PRODUCTS = [
 		'details' => '<p>This is a theme that is intended to be a website about people or maybe even your pet. It can also be used as a blog or product site. You have a navigation bar on the left side, which is always visible and makes it easy to navigate the site.</p>',
 		'gallery' => [
 			[
-				'src' => '/images/pexels-photo-28245.jpg',
-				'alt' => 'Nice Photo'
+				'src' => '/images/products/stian3.png',
+				'alt' => 'Nice photo'
 			]
 		],
 		'reviews' => [
@@ -151,10 +151,14 @@ $PRODUCTS = [
         'description' => '<p>This theme is perfect for a personal website.</p>',
         'details' => '<p>If you want something easy and simple for you personal website, this is the theme for you! This theme futures an easy set up and is very easy to edit and make it your own.</p>',
         'gallery' => [
-            [
-                'src' => '/images/pexels-photo-265613.jpg',
-                'alt' => 'Nice Photo'
-            ]
+			[
+				'src' => '/images/theme_sakarias/blog.png',
+				'alt' => 'Preview of the blog page.'
+			],
+			[
+				'src' => '/images/theme_sakarias/contact.png',
+				'alt' => 'Preview of the contact page.'
+			]
         ],
         'reviews' => [
             [

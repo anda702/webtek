@@ -76,7 +76,7 @@ function PrintProductPage($ProductName) {
     if (isset($Product['discountedPrice'])) {
     	echo '<del>$' . $Product['price'] . '</del>$' . $Product['discountedPrice'];
     } else {
-    	echo '$' . $Product['discountedPrice'];
+    	echo '$' . $Product['price'];
     }
     echo '</div>';
     $NumReviews = count($Product['reviews']);
