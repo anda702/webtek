@@ -140,6 +140,33 @@ $PRODUCTS = [
 			]
 		]
 	]
+	    	'theme_sakarias' => [
+		'title' => 'Fancy gray',
+		'price' => '15',
+		'discountedPrice' => '10',
+		'description' => '<p>This theme is perfect for a personal website.</p>',
+		'details' => '<p>If you want something easy and simple for you personal website, this is the theme for you! This theme futures an easy set up and is very easy to edit and make it your own.</p>',
+		'gallery' => [
+			[
+				'src' => '/images/pexels-photo-265613.jpg',
+				'alt' => 'Nice Photo'
+			]
+		],
+		'reviews' => [
+			[
+				'rating' => 10,
+				'comment' => 'Best theme from this site.'
+			],
+			[
+				'rating' => 5,
+				'comment' => 'Boring theme.'
+			],
+			[
+				'rating' => 8,
+				'comment' => 'Perfect for my use.'
+			]
+		]
+	]
 ];
 
 // Calculate average ratings
