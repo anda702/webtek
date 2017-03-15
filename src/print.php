@@ -157,6 +157,14 @@ function PrintLinks($Links, $Separator) {
 function PrintProductFile($Product, $File) {
 	$Path = 'products/' . $Product . '/' . $File;
 	if (file_exists($Path)) {
+		$Ext = pathinfo($Path, PATHINFO_EXTENSION);
+		if ($Ext == 'html') {
+			echo '<div style="width:100%;height:64px;background:#1F1D1E;padding:8px;margin-bottom:64px;">';
+			echo '<a href="/shop"><img src="/images/logo_green.png" style="height:64px;"></a>';
+			echo '<a onclick="this.parentNode.parentNode.removeChild(this.parentNode);" style="cursor:pointer;float:right;color:#e0e0e0;margin-left:16px;margin-right:32px;margin-top:16px;">Remove Frame</a>';
+			echo '<a style="cursor:pointer;float:right;margin-top:8px;display:inline-block;border-radius:4px;transition:.2s;padding:.5em 1em;background:#00935c;color:#e0e0e0;box-shadow:2px 2px 5px #393638;">Buy</a>';
+			echo '</div>';
+		}
 		echo file_get_contents($Path);
 	} else {
 		echo 'Bad luck. File does not exist.';

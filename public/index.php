@@ -30,7 +30,7 @@ $CSP_STRING = CSPArrayToString([
 	'font-src' => [ "'self'", 'https://fonts.gstatic.com', 'https://cdnjs.cloudflare.com' ],
 	'img-src' => [ "'self'" ],
 	'object-src' => [ "'none'" ],
-	'script-src' => [ "'self'", 'https://ajax.googleapis.com', 'https://cdnjs.cloudflare.com' ],
+	'script-src' => [ "'self'", 'https://ajax.googleapis.com', 'https://cdnjs.cloudflare.com', "'unsafe-inline'" ],
 	'style-src' => [ "'self'", 'https://fonts.googleapis.com', 'https://cdnjs.cloudflare.com', "'unsafe-inline'" ]
 	// unsafe-inline for style-src because of less.js. This can be avoided when the css is pretranspiled.
 ]);
