@@ -171,7 +171,6 @@ $PRODUCTS = [
 	'jenny' => [
         'title' => 'Green swamp',
         'price' => '33',
-        'discountedPrice' => '',
         'description' => '<p>Green swamp brings the damp to your website. </p>',
         'details' => '<p>Perfect for every Slytherin. </p>',
         'gallery' => [
