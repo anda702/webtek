@@ -1,49 +1,139 @@
 body {
-    background-color: rgb(150, 71, 44);
-    width: 70%;
-    margin: 0 auto;
+    background-color: #04BEF5;
+    width: 100%;
+    margin: auto;
+    height: 300px;
+    text-align: left;
 }
 
 header {
     text-align: center;
-    background-color: rgb(200, 0, 100)
+    margin-bottom: 50px;
 }
 
 nav {
     text-align: center;
-    background-color: red
 }
 
 img {
-    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-article {
-    border-style: dotted;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    background-color: rgb(100, 100, 100)
-}
-
-.byline {
+figure {
     text-align: center;
 }
+/*
+#animated-gif-container {
+    width: 100px;
+    height: 800px;
+    background: #e0ffc7 url(http://www.imperioanime.com/img/caramell-dansen.gif) no-repeat center center;
+}
 
-section {
-    float: right;
+#animated-gif-container2 {
+    width: 100px;
+    height: 800px;
+    background: #e0ffc7 url(http://24.media.tumblr.com/tumblr_m5j0bzMsxp1ryw8i4o1_100.gif) no-repeat center center;
+    right: 0px;
+}
+
+*/
+
+#animated-gif-container {
+    width: 100px;
+    height: 1000px;
+    background: #e0ffc7 url('giphy.gif') no-repeat center center;
+    top: 0px;
+}
+
+#animated-gif-container2 {
+    width: 100px;
+    height: 1000px;
+    background: #e0ffc7 url('giphy.gif') no-repeat center center;
+    right: 0px;
+    top: 0px;
 }
 
 aside {
-    float: left;
+    display: inline-block;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+}
+
+article {
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 50px;
     border-style: groove;
-    background-color: rgb(200, 50, 50)
+    background-color: #0F5B84;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: Black;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: black;
+}
+
+section {}
+
+.Heading {
+    padding-bottom: 50px;
 }
 
 footer {
+    bottom: 15px;
     clear: both;
+    color: black;
+    text-align: center;
+    font-style: italic;
 }
 
-section {
-    background-color: red;
-    border-style: ridge;
+a. {
+    padding-top: 50px;
+}
+
+.MenyB {
+    border-top: 1px solid #96d1f8;
+    background: #65a9d7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+    background: -o-linear-gradient(top, #3e779d, #65a9d7);
+    padding: 13px 26px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    color: white;
+    font-size: 15px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.MenyB:hover {
+    border-top-color: #083940;
+    background: #083940;
+    color: #ccc;
+}
+
+.MenyB:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
 }

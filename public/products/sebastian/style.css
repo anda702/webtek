@@ -1,6 +1,6 @@
-@BackgroundColor: #EAEAEA;
-@PrimaryColor: #80FF80;
-@SecondaryColor: #FF8080;
+@BackgroundColor: rgb(212, 212, 212);
+@PrimaryColor: rgb(237, 119, 3);
+@SecondaryColor: rgb(52, 52, 52);
 
 * {
 	font-family: "Open Sans";
@@ -11,21 +11,81 @@ html {
 }
 
 body {
-
+	margin: 0px;
+	background: url("cat.jpg") no-repeat;
 }
 
 nav, main, section, article {
 	display: block;
 }
 
-header {
+footer {
+	background: @SecondaryColor;
+	padding: 8px 64px;
+}
 
+footer p {
+	text-align: center;
+	color: @BackgroundColor;
+}
+
+header {
+	position: relative;
+}
+
+header h1 {
+	margin: 0px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: @BackgroundColor;
+	background: @PrimaryColor;
+	padding: 32px 48px;
+	font-size: 2.05em; /* fit navbar. bad solution? */
+}
+
+a {
+	cursor: pointer; /* show pointer even if no href */
+	text-decoration: none;
+	transition: 0.1s ease all;
+	color: @BackgroundColor;
+}
+
+a:hover, a.active {
+	color: @PrimaryColor;
+	transition: none;
 }
 
 nav {
 	background: @SecondaryColor;
+	padding: 8px 64px;
+	user-select: none;
 }
 
 nav a {
-	background: @PrimaryColor;
+	display: inline-block;
+	padding: 30px 48px;
+	margin-left: 16px;
+	margin-right: 16px;
+	font-size: 1.3em;
+	border-bottom: 4px solid transparent;
+}
+
+nav a:hover, nav a.active {
+	border-bottom: 4px solid @PrimaryColor;
+}
+
+main {
+	padding: 96px;
+	background-color: rgba(212, 212, 212, 0.8);
+}
+
+main p {
+
+}
+
+main p b {
+	color: @PrimaryColor;
+	font-size: 1.2em;
+	margin-right: 8px;
 }

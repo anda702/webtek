@@ -1,0 +1,34 @@
+<aside>
+    <h4>Sort by</h4>
+    <div class="select-wrapper">
+        <select name="orderBy">
+            <option value="newest" selected="selected">Newest item</option>
+            <option value="popularity">Sort by: Popularity</option>
+            <option value="rating">Sort by: Average rating</option>
+            <option value="lowToHigh">Price: Low to high</option>
+            <option value="highToLow">Price: High to low</option>
+        </select>
+    </div>
+    <hr>
+    <h4>Filter by price</h4>
+    <form>
+        <input type="range" min="0" max="500" value="450" class="priceRange" name="priceRange">
+        <div class="priceRangeWrapper">
+            <button class="btn-themed btn-xsmall btn-flat">Filter</button>
+            <input type="text" id="priceRangeOutput" value="Price: $0 - $450" name="priceRangeOutput" readonly>
+        </div>
+    </form>
+    <hr>
+    <h4>Product Categories</h4>
+    <ul class="shopCategories">
+        <li><a>Corporate<span>4</span></a></li>
+        <li><a>Blog<span>12</span></a></li>
+        <li><a>Personal<span>10</span></a></li>
+        <li><a>E-commerce<span>8</span></a></li>
+        <li><a>Wordpress</a></li>
+        <ul>
+            <li><a>Corporate<span>4</span></a></li>
+            <li><a>E-commerce<span>0</span></a></li>
+        </ul>
+    </ul>
+</aside>

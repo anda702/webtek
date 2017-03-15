@@ -1,45 +1,94 @@
 .active{
-    background: linear-gradient(#000000, #010101, #111111);
+    background: linear-gradient(#005C00, #023802, #008700);
     padding-top: 14px;
     padding-bottom: 14px;
     padding-right: -4px;
+}
+body{
+    background-color: #04323F;
+}
+article{
+}
+aside{ 
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+ul{
+    list-style-type: none;
+}
+main{
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #011F27;
+    color: #B5BCC4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 8px 8px 8px 8px;
+}
+header nav{
+    text-align: center;
 }
 nav ul li {
     display: inline;
     margin-left: -4px;
 }
-nav li:first-child a {
+nav li:first-child a{
     border-radius: 4px 0 0 4px;
 }
-nav li:last-child a {
+nav li:last-child a{
     border-right: 0;
     border-radius: 0 4px 4px 0;
 }
-nav ul {
+aside li a{
+    border-radius: 4px 4px 4px 4px;
+}
+aside li a{
+    border-right: 0;
+    border-radius: 4px 4px 4px 4px;
+}
+nav ul{
     display: inline;
     background: linear-gradient(#000000, #010101, #111111);
     text-align: center;
-    padding: 15px 25px;
-    border-radius: 0 4px 4px 0;
+    padding: 15px 100px;
+    border-radius: 4px 4px 4px 4px;
 }
-nav ul li a{
+aside li{
+    background: linear-gradient(#000000, #010101, #111111);
+    text-align: center;
+    padding: 15px;
+    border-radius: 4px 4px 4px 4px;
+}
+nav ul li a, aside ul li a{
     color: rgb(194, 190, 190);
-
 }
-a:link, a:visited {
+nav a:link, nav a:visited {
     text-decoration: none;	
-    color: linear-gradient(#099009, #922910, #189028);
+    background: linear-gradient(#000000, #010101, #111111);
     padding: 14px 25px;
     text-align: center;
     display: inline-block;
 }
-
-
-a:hover, a:active {
+nav a:hover, nav a:active {
+    text-decoration: none;
+    background: linear-gradient(#005C00, #023802, #008700);	
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+aside a:link, aside a:visited {
+    text-decoration: none;	
+    background: linear-gradient(#000000, #010101, #111111);
+    padding: 14px 25px;
+    text-align: center;
+}
+aside a:hover, aside a:active{
     text-decoration: none;
     background: linear-gradient(#005C00, #023802, #008700);
-    /*color: linear-gradient(rgb(198, 87, 34), rgb(163, 71, 29));*/	
     padding: 14px 25px;
     text-align: center;
-    display: inline-block;
 }
