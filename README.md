@@ -1,7 +1,4 @@
 # webtek
-Current version of site live at: https://webtek.sgundersen.com
-
-Visit https://webtek.sgundersen.com/products/xyz to view your template, where xyz is the name of your template.
 
 # Adding a new template
 * Create a folder in "public/products" with the name of your template.
